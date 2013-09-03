@@ -1,11 +1,18 @@
+# PS.: Rode em Python 3
+
+
 UNIVERSO = "abcdefghijklmnopqrstuvwxyz"
 TAMANHO_ALVO = 5
 ESCOLHAS_DISTINTAS = False
 PRINT_OBJETOS = False
 
 def checa_objeto(objeto):
-    return "ch" not in "".join(objeto)
+    # return "a" in objeto # Problema 23 
+    # return ("a" in objeto) and (objeto[0] != "a") # Problema 24 
+    return "ch" not in "".join(objeto) # Problema 25
 
+
+#-------
 def decida(objeto, lista_objetos, opcoes):
 
     if len(objeto) == TAMANHO_ALVO:
